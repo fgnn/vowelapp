@@ -225,7 +225,6 @@ export function VowelMap() {
 
     // Highlight nearest vowel
     const nearest = findNearestVowel(state.f1, state.f2);
-    const displayVowels = getDisplayVowels();
     
     svg.selectAll('.vowel circle')
       .attr('fill', (d: unknown) => {
